@@ -5,7 +5,7 @@
 
     <div class="align-middle mt-2">
 
-        <h2 class="text-2xl text-{{ Auth::user()->theme->value }}-500 font-bold tracking-widest uppercase font-mono mb-4 leading-relaxed">{{ isset($todo) ? 'Edit To Dos' : 'Create To Dos' }}</h2>
+        <h2 class="text-2xl text-{{ Auth::user()->theme->value }}-500 font-bold tracking-widest uppercase font-mono mb-4 leading-relaxed">{{ isset($todo) ? 'Edit A Task' : 'Create A Task' }}</h2>
 
         <form class="bg-white shadow-xl rounded-lg px-8 pt-6 pb-8 mb-4" method="POST" action="{{ isset ($todo) ? route('todos.update', $todo->id) : route('todos.store') }}">
 
@@ -215,7 +215,7 @@
             <div class="flex items-center justify-between">
 
                 <button class="bg-{{ Auth::user()->theme->value }}-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-                    {{ isset($todo) ? 'Save' : 'Create ToDo!' }}
+                    {{ isset($todo) ? 'Save' : 'Create Task!' }}
                 </button>
 
             </div>

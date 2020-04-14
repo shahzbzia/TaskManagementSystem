@@ -1,39 +1,39 @@
 <aside class="w-1/5 mt-3 leading-none">
                         
     <section class="mb-8">
-        <h5 class="uppercase mb-4 font-bold">To Do's</h5>
+        <h5 class="uppercase mb-4 font-bold">Tasks' Domain</h5>
 
         <ul class="list-none">
             <li class="text-sm pb-4">
-                <a class="@if (Route::currentRouteName() == 'todos.index') text-{{Auth::user()->theme->value}}-500 font-bold @else text-black @endif hover:no-underline hover:text-{{Auth::user()->theme->value}}-500" href="{{ route('todos.index') }}">All ToDo's</a>
+                <a class="@if (Route::currentRouteName() == 'todos.index') text-{{Auth::user()->theme->value}}-500 font-bold @else text-black @endif hover:no-underline hover:text-{{Auth::user()->theme->value}}-500" href="{{ route('todos.index') }}">All Tasks</a>
             </li>
 
             <li class="text-sm pb-4">
-                <a class="@if (Route::currentRouteName() == 'todos.create') text-{{Auth::user()->theme->value}}-500 font-bold @else text-black @endif hover:no-underline hover:text-{{Auth::user()->theme->value}}-500" href="{{ route('todos.create') }}">Create To Do's</a>
+                <a class="@if (Route::currentRouteName() == 'todos.create') text-{{Auth::user()->theme->value}}-500 font-bold @else text-black @endif hover:no-underline hover:text-{{Auth::user()->theme->value}}-500" href="{{ route('todos.create') }}">Create a task</a>
             </li>
 
             <li class="text-sm pb-4">
-                <a class="@if (Route::currentRouteName() == 'todos.showTodayTodos') text-{{Auth::user()->theme->value}}-500 font-bold @else text-black @endif hover:no-underline hover:text-{{Auth::user()->theme->value}}-500" href="{{ route('todos.showTodayTodos') }}">Today's Todos</a>
+                <a class="@if (Route::currentRouteName() == 'todos.showTodayTodos') text-{{Auth::user()->theme->value}}-500 font-bold @else text-black @endif hover:no-underline hover:text-{{Auth::user()->theme->value}}-500" href="{{ route('todos.showTodayTodos') }}">Today's Task</a>
             </li>
 
             <li class="text-sm pb-4">
-                <a class="@if (Route::currentRouteName() == 'todos.showWorkTodos') text-{{Auth::user()->theme->value}}-500 font-bold @else text-black @endif text-black hover:no-underline hover:text-{{Auth::user()->theme->value}}-500" href="{{ route('todos.showWorkTodos') }}">Work/School ToDo's</a>
+                <a class="@if (Route::currentRouteName() == 'todos.showWorkTodos') text-{{Auth::user()->theme->value}}-500 font-bold @else text-black @endif text-black hover:no-underline hover:text-{{Auth::user()->theme->value}}-500" href="{{ route('todos.showWorkTodos') }}">Work/School Tasks</a>
             </li>
 
             <li class="text-sm pb-4">
-                <a class="@if (Route::currentRouteName() == 'todos.showHomeTodos') text-{{Auth::user()->theme->value}}-500 font-bold @else text-black @endif text-black hover:no-underline hover:text-{{Auth::user()->theme->value}}-500" href="{{ route('todos.showHomeTodos') }}">Home ToDo's</a>
+                <a class="@if (Route::currentRouteName() == 'todos.showHomeTodos') text-{{Auth::user()->theme->value}}-500 font-bold @else text-black @endif text-black hover:no-underline hover:text-{{Auth::user()->theme->value}}-500" href="{{ route('todos.showHomeTodos') }}">Home Tasks</a>
             </li>
 
             <li class="text-sm pb-4">
-                <a class="@if (Route::currentRouteName() == 'todos.showPersonalTodos') text-{{Auth::user()->theme->value}}-500 font-bold @else text-black @endif text-black hover:no-underline hover:text-{{Auth::user()->theme->value}}-500" href="{{ route('todos.showPersonalTodos') }}">Personal ToDo's</a>
+                <a class="@if (Route::currentRouteName() == 'todos.showPersonalTodos') text-{{Auth::user()->theme->value}}-500 font-bold @else text-black @endif text-black hover:no-underline hover:text-{{Auth::user()->theme->value}}-500" href="{{ route('todos.showPersonalTodos') }}">Personal Tasks</a>
             </li>
 
             <li class="text-sm pb-4">
-                <a class="@if (Route::currentRouteName() == 'todos.showCompleted') text-{{Auth::user()->theme->value}}-500 font-bold @else text-black @endif text-black hover:no-underline hover:text-{{Auth::user()->theme->value}}-500" href="{{ route('todos.showCompleted') }}">Completed ToDo's</a>
+                <a class="@if (Route::currentRouteName() == 'todos.showCompleted') text-{{Auth::user()->theme->value}}-500 font-bold @else text-black @endif text-black hover:no-underline hover:text-{{Auth::user()->theme->value}}-500" href="{{ route('todos.showCompleted') }}">Completed Tasks</a>
             </li>
 
             <li class="text-sm pb-4">
-                <a class="@if (Route::currentRouteName() == 'todos.showTrashed') text-{{Auth::user()->theme->value}}-500 font-bold @else text-black @endif text-black hover:no-underline hover:text-{{Auth::user()->theme->value}}-500" href="{{ route('todos.showTrashed') }}">Trashed ToDo's</a>
+                <a class="@if (Route::currentRouteName() == 'todos.showTrashed') text-{{Auth::user()->theme->value}}-500 font-bold @else text-black @endif text-black hover:no-underline hover:text-{{Auth::user()->theme->value}}-500" href="{{ route('todos.showTrashed') }}">Trashed Tasks</a>
             </li>
 
             
